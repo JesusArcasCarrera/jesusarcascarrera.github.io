@@ -1,0 +1,34 @@
+<header class="header">
+    <div class="profile-section">
+        <div class="profile-image">
+            <img src="{{ '/assets/images/FOTOPERFIL.png' | relative_url }}" alt="{{ site.author }}" id="profile-img">
+        </div>
+        <div class="profile-info">
+            <h1>{{ site.author }}</h1>
+            <p class="title">Estudiante de Ingeniería Informática - Especialización en IA</p>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>{{ site.email }}</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <span>711 289 168</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Málaga, España</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-linkedin"></i>
+                    <a href="{{ site.social_links.linkedin }}" target="_blank">linkedin.com/in/jesusarcas</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-github"></i>
+                    <a href="{{ site.social_links.github }}" target="_blank">github.com/JesusArcasCarrera</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+

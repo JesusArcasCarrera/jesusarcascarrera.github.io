@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: 'es' }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }} - {{ site.title }}</title>
+    <meta name="description" content="{{ page.excerpt }}">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- SEO -->
+    {% seo %}
+</head>
+<body>
+    <main class="main-blog-content">
+        <article class="post-article">
+            <div class="post-header-section">
+                <div class="post-container">
+                    <a href="{{ '/blog' | relative_url }}" class="post-back-link">
+                        <i class="fas fa-arrow-left"></i>
+                        <span>Volver al blog</span>
+                    </a>
+                    
+                    <header class="post-header">
+                        <h1 class="post-title">{{ page.title }}</h1>
+                        
+                        <div class="post-header-info">
+                            {% if page.category %}
+                            <div class="post-category-badge">
+                                {% case page.category %}
+                                    {% when 'ai' %}<i class="fas fa-brain"></i> Inteligencia Artificial
+                                    {% when 'web' %}<i class="fas fa-code"></i> Desarrollo Web
+                                    {% when 'tutorial' %}<i class="fas fa-book"></i> Tutorial
+                                    {% when 'project' %}<i class="fas fa-project-diagram"></i> Proyecto
+                                    {% else %}{{ page.category }}
+                                {% endcase %}
+                            </div>
+                            {% endif %}
+                            
+                            <div class="post-meta">
+                                <span class="post-date">
+                                    <i class="fas fa-calendar"></i>
+                                    {{ page.date | date: "%d de %B de %Y" }}
+                                </span>
+                                {% if page.readTime %}
+                                <span class="post-read-time">
+                                    <i class="fas fa-clock"></i>
+                                    {{ page.readTime }}
+                                </span>
+                                {% endif %}
+                            </div>
+                            
+                            {% if page.tags %}
+                            <div class="post-tags">
+                                {% if page.tags.first %}
+                                    {% for tag in page.tags %}
+                                    <span class="post-tag">{{ tag }}</span>
+                                    {% endfor %}
+                                {% else %}
+                                    {% assign tags_string = page.tags | to_string | replace: '"', '' | replace: '[', '' | replace: ']', '' %}
+                                    {% assign tags_array = tags_string | split: ', ' %}
+                                    {% if tags_array.size == 1 %}
+                                        {% assign tags_array = tags_string | split: ',' %}
+                                    {% endif %}
+                                    {% for tag in tags_array %}
+                                        {% assign tag_clean = tag | strip %}
+                                        {% if tag_clean != '' and tag_clean != ',' %}
+                                        <span class="post-tag">{{ tag_clean }}</span>
+                                        {% endif %}
+                                    {% endfor %}
+                                {% endif %}
+                            </div>
+                            {% endif %}
+                        </div>
+                    </header>
+                </div>
+            </div>
+            
+            <div class="post-content-section">
+                <div class="post-content-container">
+                    <div class="post-content">
+                        {{ content }}
+                    </div>
+                    
+                    <div class="post-footer">
+                        <a href="{{ '/blog' | relative_url }}" class="post-footer-link">
+                            <i class="fas fa-arrow-left"></i>
+                            <span>Volver a todos los artículos</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </main>
+    
+    {% include footer-new.html %}
+    
+    <script src="{{ '/assets/js/script.js' | relative_url }}"></script>
+</body>
+</html>

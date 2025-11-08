@@ -1,0 +1,42 @@
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Jesús Arcas Carrera</h3>
+                <p>Ingeniero en Informática especializado en Inteligencia Artificial y desarrollo de software</p>
+            </div>
+            <div class="footer-section">
+                <h4>Enlaces</h4>
+                <ul>
+                    <li><a href="{{ '/' | relative_url }}">Inicio</a></li>
+                    <li><a href="{{ '/blog' | relative_url }}">Blog</a></li>
+                    <li><a href="{{ '/CV_Jesus_Arcas_Carrera.pdf' | relative_url }}" download>Descargar CV</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Redes Sociales</h4>
+                <div class="social-links">
+                    {% if site.social_links.github %}
+                    <a href="{{ site.social_links.github }}" target="_blank" class="social-link" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    {% endif %}
+                    {% if site.social_links.linkedin %}
+                    <a href="{{ site.social_links.linkedin }}" target="_blank" class="social-link" title="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    {% endif %}
+                    {% if site.social_links.email %}
+                    <a href="{{ site.social_links.email }}" class="social-link" title="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; {{ 'now' | date: "%Y" }} {{ site.author }}. Todos los derechos reservados.</p>
+        </div>
+    </div>
+</footer>
+

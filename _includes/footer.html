@@ -1,0 +1,26 @@
+<footer class="footer">
+    <p>&copy; {{ 'now' | date: "%Y" }} {{ site.author }}. Todos los derechos reservados.</p>
+    <div class="footer-links">
+        <a href="{{ '/CV_Jesus_Arcas_Carrera.pdf' | relative_url }}" download class="download-btn">
+            <i class="fas fa-download"></i> Descargar CV en PDF
+        </a>
+    </div>
+    <div class="social-footer">
+        {% if site.social_links.github %}
+        <a href="{{ site.social_links.github }}" target="_blank" class="social-link">
+            <i class="fab fa-github"></i>
+        </a>
+        {% endif %}
+        {% if site.social_links.linkedin %}
+        <a href="{{ site.social_links.linkedin }}" target="_blank" class="social-link">
+            <i class="fab fa-linkedin"></i>
+        </a>
+        {% endif %}
+        {% if site.social_links.email %}
+        <a href="{{ site.social_links.email }}" class="social-link">
+            <i class="fas fa-envelope"></i>
+        </a>
+        {% endif %}
+    </div>
+</footer>
+

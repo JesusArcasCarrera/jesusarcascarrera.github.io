@@ -1,0 +1,138 @@
+# Configuración para GitHub Pages
+title: "Jesús Arcas Carrera - CV"
+description: "Página personal y CV de Jesús Arcas Carrera - Desarrollador de Software"
+author: "Jesús Arcas Carrera"
+email: "jesusarcascarrera@gmail.com"
+
+# Configuración del sitio
+baseurl: "" # Deja vacío si el repositorio se llama username.github.io
+url: "https://jesusarcascarrera.github.io" # Cambia por tu dominio o username.github.io
+
+# Configuración de GitHub Pages
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Configuración de SEO
+seo:
+  type: "Person"
+  name: "Jesús Arcas Carrera"
+  description: "Desarrollador de Software especializado en tecnologías modernas"
+  url: "https://jesusarcascarrera.github.io"
+  image: "/profile.jpg"
+  social:
+    name: "Jesús Arcas Carrera"
+    links:
+      - "https://github.com/JesusArcasCarrera/"
+      - "https://linkedin.com/in/jesusarcas"
+
+# Configuración de Jekyll
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+
+# Configuración de colecciones
+collections:
+  projects:
+    output: true
+    permalink: /:collection/:name/
+
+# Configuración de posts
+paginate: 5
+paginate_path: "/blog/page:num/"
+
+# Configuración de defaults
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+  - scope:
+      path: "index.md"
+    values:
+      layout: "cv"
+  - scope:
+      path: "_posts"
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "project"
+
+# Configuración de navegación
+navigation:
+  - title: "Inicio"
+    url: "/"
+  - title: "CV"
+    url: "/"
+  - title: "Blog"
+    url: "/blog/"
+  - title: "Contacto"
+    url: "/#contacto"
+
+# Configuración de redes sociales
+social_links:
+  github: "https://github.com/JesusArcasCarrera/"
+  linkedin: "https://linkedin.com/in/jesusarcas"
+  email: "mailto:jesusarcascarrera@gmail.com"
+
+# Configuración de analytics (opcional)
+google_analytics: "GA_MEASUREMENT_ID" # Reemplaza con tu ID de Google Analytics
+
+# Configuración de comentarios (opcional)
+disqus:
+  shortname: "jesusarcas-cv" # Reemplaza con tu shortname de Disqus
+
+# Configuración de feed
+feed:
+  posts_limit: 10
+  excerpt_only: true
+
+# Configuración de sitemap
+sitemap:
+  changefreq: monthly
+  priority: 0.8
+
+# Configuración de tiempo
+timezone: "Europe/Madrid"
+
+# Configuración de idioma
+lang: "es"
+
+# Configuración de encoding
+encoding: "utf-8"
+
+# Configuración de exclude
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - README.md
+  - LICENSE
+  - .gitignore
+  - .gitattributes
+  - .editorconfig
+  - .travis.yml
+  - .github/
+
+# Configuración de include
+include:
+  - _pages
+  - _posts
+  - _projects
+  - _includes
+
+# Configuración de keep_files
+keep_files:
+  - .git
+  - .gitignore
+  - .nojekyll

@@ -1,0 +1,13 @@
+<nav class="main-navigation">
+    <ul class="nav-list">
+        {% for item in site.navigation %}
+        <li class="nav-item">
+            <a href="{{ item.url | relative_url }}" class="nav-link">{{ item.title }}</a>
+        </li>
+        {% endfor %}
+        <li class="nav-item">
+            <a href="{{ '/blog' | relative_url }}" class="nav-link">Blog</a>
+        </li>
+    </ul>
+</nav>
+
