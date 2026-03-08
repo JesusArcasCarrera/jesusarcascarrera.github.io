@@ -65,13 +65,13 @@ defaults:
       layout: "project"
 
 # Configuración de navegación
+blog_enabled: false
+
 navigation:
   - title: "Inicio"
     url: "/"
   - title: "CV"
     url: "/"
-  - title: "Blog"
-    url: "/blog/"
   - title: "Contacto"
     url: "/#contacto"
 

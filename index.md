@@ -162,10 +162,11 @@ title: "CV - Jesús Arcas Carrera"
         </div>
 </section>
 
+{% if site.blog_enabled %}
 <section class="section">
 <h2><i class="fas fa-blog"></i> Blog y Artículos</h2>
 
-<p>Comparto mis conocimientos, experiencias y tutoriales sobre programación, inteligencia artificial y desarrollo web.</p>
+<p>Comparto mis conocimientos, experiencias y tutoriales sobre programación, inteligencia artificial...</p>
 
 <div class="blog-preview-grid">
     {% for post in site.posts limit: 3 %}
@@ -201,3 +202,4 @@ title: "CV - Jesús Arcas Carrera"
     </a>
 </div>
 </section>
+{% endif %}

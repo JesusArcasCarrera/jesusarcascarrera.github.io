@@ -24,6 +24,7 @@ permalink: /blog/
     </div>
 </section>
 
+{% if site.blog_enabled %}
 <section class="section section-articles">
     <h2><i class="fas fa-blog"></i> Artículos</h2>
     
@@ -103,4 +104,15 @@ permalink: /blog/
     </div>
     {% endif %}
 </section>
-
+{% else %}
+<section class="section section-articles">
+    <h2><i class="fas fa-pause-circle"></i> Blog en pausa</h2>
+    <p>El blog esta temporalmente muteado. Volvera en una proxima actualizacion.</p>
+    <div class="blog-actions">
+        <a href="{{ '/' | relative_url }}" class="btn btn-primary">
+            <i class="fas fa-arrow-left"></i>
+            Volver al inicio
+        </a>
+    </div>
+</section>
+{% endif %}

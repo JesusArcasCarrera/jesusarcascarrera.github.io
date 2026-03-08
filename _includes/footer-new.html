@@ -9,7 +9,9 @@
                 <h4>Enlaces</h4>
                 <ul>
                     <li><a href="{{ '/' | relative_url }}">Inicio</a></li>
+                    {% if site.blog_enabled %}
                     <li><a href="{{ '/blog' | relative_url }}">Blog</a></li>
+                    {% endif %}
                     <li><a href="{{ '/CV_Jesus_Arcas_Carrera.pdf' | relative_url }}" download>Descargar CV</a></li>
                 </ul>
             </div>
@@ -39,4 +41,3 @@
         </div>
     </div>
 </footer>
-

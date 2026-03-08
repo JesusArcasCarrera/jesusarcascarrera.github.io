@@ -5,9 +5,10 @@
             <a href="{{ item.url | relative_url }}" class="nav-link">{{ item.title }}</a>
         </li>
         {% endfor %}
+        {% if site.blog_enabled %}
         <li class="nav-item">
             <a href="{{ '/blog' | relative_url }}" class="nav-link">Blog</a>
         </li>
+        {% endif %}
     </ul>
 </nav>
-
