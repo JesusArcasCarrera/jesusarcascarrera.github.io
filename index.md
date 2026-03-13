@@ -5,9 +5,8 @@ title: "CV - Jesús Arcas Carrera"
 
 <section class="section">
 <h2><i class="fas fa-user"></i> Sobre Mí</h2>
-<p>Actualmente estoy finalizando el grado en Ingeniería Informática por la UNED. Comencé en la programación como afición sobre 2014. He desarrollado en distintas ramas como videojuegos, backend web, apps Android, frontend web.</p>
-<p>A finales de 2020 tuve la oportunidad de acercarme a la IA con un enfoque bastante práctico (sin olvidar los fundamentos teóricos) en el curso de Samsung-UMA. Descubrí la rama en la que me quiero especializar.</p>
-<p>En estos años he realizado tareas puntuales desde desarrollo web hasta clases particulares. Si bien aún no he tenido la oportunidad de desempeñarme en empresas del sector, considero que compenso mi falta de experiencia laboral con la capacidad resolutiva que he desarrollado con los años de aprendizaje autodidacta y mi sentido de la responsabilidad para cumplir con mis compromisos.</p>
+<p>A una asignatura de finalizar el Grado en Ingeniería Informática en la UNED, y comenzando el Grado en Matemáticas también en la UNED. Programo desde 2014 y he desarrollado proyectos en distintas áreas: videojuegos, backend, frontend y aplicaciones Android.</p>
+<p>A finales de 2020 me acerqué a la IA con un enfoque práctico en el curso de Samsung-UMA. Descubrí la rama en la que me quiero especializar. Destaco por mi <strong>autonomía</strong> y <strong>capacidad resolutiva</strong>.</p>
 
 <div class="languages-compact">
     <div class="language-item">
@@ -40,12 +39,15 @@ title: "CV - Jesús Arcas Carrera"
     </div>
     <div class="project-card">
         <h3>DiarioBOE.es</h3>
-        <p>Plataforma web para el seguimiento y análisis del Boletín Oficial del Estado (BOE). Proporciona herramientas de búsqueda avanzada, filtrado y análisis de contenido para facilitar el acceso a la información oficial publicada en el BOE.</p>
+        <p>Plataforma que transforma publicaciones del BOE en artículos accesibles mediante IA generativa. Pipeline de scraping, procesamiento y generación con LLMs. API en Flask, frontend con Nuxt.js, PostgreSQL con búsqueda de texto completo e indexación vectorial (HNSW), y despliegue con Docker. En desarrollo: sistema RAG con reranking para consultas en lenguaje natural.</p>
         <div class="project-tech">
-            <span class="tech-tag">Web Development</span>
-            <span class="tech-tag">Data Processing</span>
-            <span class="tech-tag">Search Engine</span>
-            <span class="tech-tag">API Integration</span>
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">Flask</span>
+            <span class="tech-tag">Nuxt.js</span>
+            <span class="tech-tag">PostgreSQL</span>
+            <span class="tech-tag">Docker</span>
+            <span class="tech-tag">LLMs</span>
+            <span class="tech-tag">RAG</span>
         </div>
         <div class="project-links">
             <a href="https://diarioboe.es" class="project-link" target="_blank"><i class="fas fa-external-link-alt"></i> Ver sitio</a>
@@ -70,6 +72,33 @@ title: "CV - Jesús Arcas Carrera"
 </section>
 
 <section class="section">
+<h2><i class="fas fa-briefcase"></i> Experiencia</h2>
+<div class="education-simple">
+    <div class="education-item">
+        <div class="education-header">
+            <h3><a href="https://diarioboe.es" target="_blank">Diarioboe.es</a></h3>
+            <span class="education-year">2025 - Actualidad</span>
+        </div>
+        <p>Plataforma que transforma publicaciones del BOE en artículos accesibles mediante IA generativa. Pipeline de scraping, procesamiento y generación con LLMs. API en Flask, web con Nuxt.js, PostgreSQL con FTS e indexación vectorial (HNSW), y despliegue con Docker. En desarrollo: sistema RAG con reranking para consultas en lenguaje natural.</p>
+    </div>
+    <div class="education-item">
+        <div class="education-header">
+            <h3>Profesor particular</h3>
+            <span class="education-year">2024 - 2025</span>
+        </div>
+        <p>Clases individuales a compañeros de carrera en asignaturas técnicas: Sistemas Digitales, Lógica y Estructuras Discretas, y Bases de Datos.</p>
+    </div>
+    <div class="education-item">
+        <div class="education-header">
+            <h3>Desarrollador freelance</h3>
+            <span class="education-year">2016 - 2019</span>
+        </div>
+        <p>Proyectos variados para particulares y pequeñas empresas: webs corporativas, integración de componentes en React, automatización con macros de Excel, y un minijuego en Unity para Android.</p>
+    </div>
+</div>
+</section>
+
+<section class="section">
 <h2><i class="fas fa-code"></i> Habilidades Técnicas</h2>
 <div class="skills-modern">
     <div class="skill-group">
@@ -79,17 +108,14 @@ title: "CV - Jesús Arcas Carrera"
         </div>
         <div class="skill-tags">
             <span class="skill-badge">Python</span>
-            <span class="skill-badge">TensorFlow</span>
-            <span class="skill-badge">Keras</span>
+            <span class="skill-badge">Keras/TensorFlow</span>
             <span class="skill-badge">Scikit-learn</span>
-            <span class="skill-badge">NumPy</span>
-            <span class="skill-badge">Pandas</span>
-            <span class="skill-badge">OpenCV</span>
-            <span class="skill-badge">Matplotlib</span>
-            <span class="skill-badge">APIs LLM</span>
+            <span class="skill-badge">LLMs</span>
+            <span class="skill-badge">RAG</span>
+            <span class="skill-badge">LangChain</span>
         </div>
     </div>
-    
+
     <div class="skill-group">
         <div class="skill-group-header">
             <i class="fas fa-laptop-code"></i>
@@ -97,17 +123,12 @@ title: "CV - Jesús Arcas Carrera"
         </div>
         <div class="skill-tags">
             <span class="skill-badge">JavaScript</span>
-            <span class="skill-badge">HTML/CSS</span>
-            <span class="skill-badge">Vue.js</span>
-            <span class="skill-badge">Three.js</span>
             <span class="skill-badge">Java</span>
-            <span class="skill-badge">PHP</span>
-            <span class="skill-badge">C++</span>
-            <span class="skill-badge">C# Script</span>
-            <span class="skill-badge">Unity</span>
+            <span class="skill-badge">Flask</span>
+            <span class="skill-badge">Nuxt.js</span>
         </div>
     </div>
-    
+
     <div class="skill-group">
         <div class="skill-group-header">
             <i class="fas fa-database"></i>
@@ -115,10 +136,10 @@ title: "CV - Jesús Arcas Carrera"
         </div>
         <div class="skill-tags">
             <span class="skill-badge">SQL</span>
+            <span class="skill-badge">PostgreSQL</span>
+            <span class="skill-badge">Docker</span>
             <span class="skill-badge">Git</span>
             <span class="skill-badge">Linux</span>
-            <span class="skill-badge">Plotly-Dash</span>
-            <span class="skill-badge">TensorFlow.js</span>
         </div>
     </div>
 </div>
@@ -129,11 +150,18 @@ title: "CV - Jesús Arcas Carrera"
         <div class="education-simple">
             <div class="education-item">
                 <div class="education-header">
+                    <h3>Grado en Matemáticas</h3>
+                    <span class="education-year">2025/26 - Presente</span>
+                </div>
+                <p class="education-institution">UNED (Universidad Nacional de Educación a Distancia)</p>
+            </div>
+            <div class="education-item">
+                <div class="education-header">
                     <h3>Grado en Ingeniería Informática</h3>
                     <span class="education-year">2020/21 - Presente</span>
                 </div>
                 <p class="education-institution">UNED (Universidad Nacional de Educación a Distancia)</p>
-                <p>Actualmente finalizando el grado a falta de 1 asignatura</p>
+                <p>A falta de 1 asignatura para finalizar</p>
             </div>
             <div class="education-item">
                 <div class="education-header">
